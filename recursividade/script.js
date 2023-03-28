@@ -62,7 +62,7 @@ console.log("somarDe", somarDe(100));
 let texto = "";
 let resultadoSoma = 0;
 function mostrarTextoSomarDe(numero) {
-    texto += `${numero}+`;
+  texto += `${numero}+`;
   resultadoSoma += numero;
   if (numero <= 1) {
     texto = texto.slice(0, -1) + "=" + resultadoSoma;
@@ -80,3 +80,14 @@ function mostrarTextoSomarDe(numero) {
   }
 }
 console.log("mostrarTextoSomarDe", mostrarTextoSomarDe(100));
+
+/*
+fatorial(5) = 5 * 4 * 3 * 2 * 1 = 120
+*/
+function fatorial(numero) {
+  if(numero == 1){
+    return numero;
+  }else{
+    return numero * fatorial(numero - 1);
+  }
+}
