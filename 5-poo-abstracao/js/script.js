@@ -96,7 +96,7 @@ class Usuario {
   const objUsuario3 = new Usuario('master', 'senha43');
   const objUsuario4 = new Usuario('user', 'senha44');
   const objUsuario5 = new Usuario('user', 'senha123');
-  objUsuario.login = 'set_login';
+  objUsuario.senha
   console.log(objUsuario);
   console.log(objUsuario.verificarSenha());
   console.log(objUsuario.mostrarSenha());
