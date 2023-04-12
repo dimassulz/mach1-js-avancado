@@ -14,6 +14,9 @@ export default class Image {
 
   createElementWithEventClick() {
     const imgElement = this.createElement();
+    imgElement.style.cursor = 'pointer'
+    imgElement.style.borderWidth = '1px'
+    imgElement.style.borderStyle = 'dashed'
     imgElement.addEventListener("click", () => alert(this.message));
     return imgElement;
   }
