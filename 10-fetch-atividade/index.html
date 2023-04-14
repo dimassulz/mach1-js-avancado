@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - Atividade Prática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <span class="fs-4">Atividade 10 - JS Avançado</span>
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="cadastro.html">Cadastro Aluno</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="lista.html">Consulta Aluno</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Fetch API - Atividade Prática</h1>
+        <p>a. Ao preencher os dados do Aluno envie os dados via POST para a rota “/aluno”.
+            <br>i. Caso o retorno seja sucesso exibir a mensagem “Aluno cadastrado com sucesso”
+            <br>ii. Caso o retorno seja erro exibir a mensagem “Matrícula já cadastrada.”.
+        <p>b. Na tela de Busca possuirá dois tipos de busca, o primeiro é a busca por matrícula, que usará a matrícula
+            preenchida e ao clicar no botão “buscar por matricula”, o sistema deve executar a busca via GET, para a rota
+            “/aluno/${matricula-digitada}".
+            <br>i. Caso a API retorne Erro exibir mensagem “Matrícula não encontrada”.
+            <br>ii. Caso retorne sucesso exibir os dados de retorno nos LABEL de id= “matricula-aluno e nome-aluno”.
+        <p>c. Na segunda buscar, possui duas formas de buscar diferentes, em ambas as regras no comportamento no retorno
+            são
+            iguais;
+            <br>i. Caso retorno 1 ou mais alunos exibir “matricula + nome” de cada no DIV de id=“dados”.
+            <br>ii. Caso não retorne nenhum dado exibir a mensagem “Nenhuma informação encontrada.” no DIV de id=“dados”
+            <br>iii. Caso a opção “Todos” esteja marcada, execute a busca via GET, para a rota “aluno/todos”.
+            <br>iv. Caso a opção “Por Nome” esteja marcada, preencha o nome ou parte do mesmo e ao clicar em buscar
+            execute
+            a busca via GET, para a rota “/aluno/search?nome=${nome-busca-aqui}"
+        </p>
+    </div>
+    <script src="js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

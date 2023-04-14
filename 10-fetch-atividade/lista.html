@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - Atividade - Lista Aluno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="index.html" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <span class="fs-4">Atividade 10 - JS Avançado</span>
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="cadastro.html">Cadastro Aluno</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="lista.html">Consulta Aluno</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+
+            <h1 class="mt-5 mb-4">Busca por Matrícula</h1>
+            <div class="row g-3">
+                <div class="col-sm-8">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" class="form-control" name="matricula" id="matricula">
+                </div>
+                <div class="col-sm-4">
+                    <label for="button"> </label>
+                    <input type="button" class=" form-control btn btn-primary" id="btnBuscarMatricula"
+                        value="Buscar por Matricula">
+                </div>
+            </div>
+            <div class="row g-3" id="resultado-matricula" style="display: none;">
+                <h4 class="mt-5 mb-4">Resultado da busca por Matrícula</h4>
+                <div class="col-sm-6">
+                    Nome: <label id="matricula-aluno"></label>
+                </div>
+                <div class="col-sm-6">
+                    Matrícula: <label id="nome-aluno"></label>
+                </div>
+            </div>
+        </form>
+        <form>
+            <h1 class="mt-5 mb-4">Busca por Nome ou Todos</h1>
+
+            <div class="row g-3">
+                <div class="col-sm-2">
+                    <label>Todos</label>
+                    <input type="radio" class="form-check-input" checked name="tipo-busca" id="opt-busca-todos"
+                        value="T">
+                </div>
+                <div class="col-sm-2">
+                    <label>Por Nome</label>
+                    <input type="radio" class="form-check-input" name="tipo-busca" id="opt-busca-nome" value="N">
+                </div>
+                <div class="col-sm-8" id="pn-filter-nome" style="display:none;">
+                    <input type="text" class="form-control" placeholder="Buscar por nome" name="nome" id="nome">
+                </div>
+                <div class="col-sm-4">
+                    <input type="button" class="form-control btn btn-primary" id="btnBuscar"
+                        value="Buscar">
+                </div>
+            </div>
+
+        </form>
+        <div class="row mt-5 g-3" id="dados">
+
+        </div>
+    </div>
+
+
+    <script src="js/lista.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid API - Chat GPT - Detecting Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Rapid API - Chat GPT - Detecting Images</h1>
+    <div class="mb-3">
+        <label for="texto" class="form-label">Digite o uma frase para a imagem ser detectada</label>
+        <input type="text" class="form-control" id="texto" >
+        <label for="textDetected" class="form-label">Selecione a quantidade de imagens</label>
+        <select id="qtdImagens" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button id="pesquisar" class="btn btn-primary me-md-2" type="button">Pesquisar</button>
+        </div>
+    </div>
+    <div id="imagemDiv"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js" type="module" defer></script>
+</body>
+
+</html>
