@@ -3,8 +3,7 @@ async function mostrarAvatar() {
     //primeira request ler o arquivo local
     let respostaArquivo = await fetch("assets/file/user.json"); //resposta http json local
     if(!respostaArquivo.ok) throw new Error("Erro ao consultar o link do local")
-    let usuario = await respostaArquivo;
-    console.log(usuario)
+    let usuario = await respostaArquivo.json();
 
     //segunda request ler github
     let respostaGitHubAPI = await fetch(
